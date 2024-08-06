@@ -3,7 +3,7 @@ import pandas as pd
 #from idtxl.estimators_jidt import JidtKraskovCMI
 import knncmi as k
 
-k_cst = 3; #  number of nearest neighbours considered
+k_cst = 2 #  number of nearest neighbours considered
 settings = {'kraskov_k': k_cst}
 
 def shift_elements(arr, num, fill_value):

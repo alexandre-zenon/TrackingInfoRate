@@ -1,7 +1,9 @@
 ﻿### Information-theoretic Analysis of tracking data
 This script takes tracking data as input and computes feedback, feedforward and total information from recorded behaviour, in accordance with Lam & Zénon, 2021. 
 
-Input data are csv files "[filename].csv", with the samples in rows and the variables in columns. In its current form, the script takes mandatorily 30 trials and 3 variables: 1 output and 2 intputs. 
+Input data are csv files "[filename].csv", with the samples in rows and the variables in columns. 
+
+By default, the script takes 30 trials and 3 variables: 1 output and 2 intputs. 
 
 Output data are also csv files, names "output_[filename].csv", with one column per output variable and one row per trial. These files will be saved in an output/ directory within the working directory (needs to be created beforehand).
 
@@ -22,6 +24,10 @@ You can also use
 python ITscript.py -f "exampleData.csv"
 ```
 to provide a single filename. 
+To change the number of trials and/or samples and/or number of variables, you can use these options:
+```
+python ITscript.py -tr 40 -sa 500 -in 2
+```
 Finally,
 ```
 python ITscript.py -pl True
